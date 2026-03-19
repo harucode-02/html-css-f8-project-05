@@ -717,27 +717,26 @@ button {
 .clients__bubble::after {
     content: "";
     position: absolute;
+    /* để mũi tên luôn nằm chính giữa, bất kể kích thước của bubble thay đổi */
     left: 50%;
     transform: translateX(-50%);
-    width: 0;
-    height: 0;
     border-style: solid;
     pointer-events: none;
 }
 
 .clients__bubble::before {
-    bottom: -51px;
-    border-width: 51px 46px 0 46px;
+    bottom: -61px;
+    border-width: 61px 46px 0 46px;
     border-color: #dfe2e8 transparent transparent transparent;
-    z-index: 0;
+    z-index: 0; /* để border nằm dưới mũi tên trắng */
     transition: border-color 0.2s ease;
 }
 
 .clients__bubble::after {
-    bottom: -49px;
-    border-width: 49px 45px 0 45px;
+    bottom: -60px;
+    border-width: 60px 45px 0 45px;
     border-color: #fff transparent transparent transparent;
-    z-index: 1;
+    z-index: 1; /* để mũi tên trắng nằm trên border */
 }
 
 .clients__bubble:hover {
@@ -763,7 +762,7 @@ button {
 .clients__avatar-frame {
     width: 104px;
     height: 104px;
-    margin: 72px auto 20px;
+    margin: 96px auto 20px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -908,7 +907,6 @@ button {
     padding: 28px;
     background: #fff;
     display: flex;
-    align-items: flex-start;
     gap: 30px;
     transition:
         border-color 0.2s ease,
@@ -925,8 +923,7 @@ button {
     height: 160px;
     border-radius: 12px;
     object-fit: cover;
-    object-position: center;
-    display: block;
+    display: block; /* để ảnh không bị kéo dãn */
 }
 
 .blog__date {
@@ -937,6 +934,7 @@ button {
 }
 
 .blog__item-title {
+    width: 332px;
     display: inline-block;
     margin-top: 10px;
     color: var(--secondary-color);
