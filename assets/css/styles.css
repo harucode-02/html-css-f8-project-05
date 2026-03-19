@@ -961,3 +961,110 @@ button {
 .blog__read-more:hover {
     color: #7264d6;
 }
+
+/* ==================== Apps ==================== */
+.apps {
+    margin-top: 160px;
+}
+
+.apps__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 24px;
+    background: #7264d6;
+    position: relative;
+    padding: 100px 0;
+}
+
+.apps__eyebrow {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.apps__eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #fff;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.apps__title {
+    margin-top: 12px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
+
+.apps__desc {
+    margin-top: 18px;
+    max-width: 435px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.apps__actions {
+    margin-top: 38px;
+    display: flex;
+    gap: 16px;
+}
+
+.apps__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 0;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.apps__button:hover {
+    opacity: 0.9;
+}
+
+.apps__icon {
+    display: block;
+}
+
+.apps__decor {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+}
+
+.apps__decor--top-left {
+    position: absolute;
+    left: 112px;
+    top: 49px;
+}
+
+.apps__decor--middle-left {
+    left: 166px;
+    top: 263px;
+}
+
+.apps__decor--top-right {
+    right: 112px;
+    top: 49px;
+}
+
+.apps__decor--middle-right {
+    right: 166px;
+    top: 263px;
+}
