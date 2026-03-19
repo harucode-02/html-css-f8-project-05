@@ -831,4 +831,135 @@ button {
     border-color: var(--primary-color);
 }
 
-/* ==================== Footer ==================== */
+/* ==================== Blog ==================== */
+.blog {
+    margin-top: 160px;
+}
+
+.blog__intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__eyebrow {
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.blog__eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.blog__heading {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--secondary-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+    text-decoration: none;
+}
+
+.blog__desc {
+    margin-top: 18px;
+    max-width: 435px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.blog__btn {
+    padding: 15px 30px;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.blog__btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.blog__btn:active {
+    transform: scale(0.98);
+}
+
+.blog__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.blog__item {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #dfe2e8;
+    padding: 28px;
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.blog__item:hover {
+    border-color: transparent;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.07);
+}
+
+.blog__item-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.blog__date {
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.714; /* 171.429% */
+}
+
+.blog__item-title {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.667; /* 166.667% */
+    text-decoration: none;
+}
+
+.blog__item-title:hover {
+    text-decoration: underline;
+}
+
+.blog__read-more {
+    margin-top: 20px;
+    display: inline-block;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.625; /* 162.5% */
+    text-decoration: none;
+}
+
+.blog__read-more:hover {
+    color: #7264d6;
+}
