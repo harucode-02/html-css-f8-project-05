@@ -825,6 +825,14 @@ a {
     align-items: center;
 }
 
+.blog__intro-content {
+    max-width: 435px;
+}
+
+.blog__intro-action {
+    flex-shrink: 0; /* để nút không bị co lại khi intro có kích thước nhỏ hơn khoảng cách giữa heading và nút */
+}
+
 .blog__heading {
     display: inline-block;
     margin-top: 6px;
