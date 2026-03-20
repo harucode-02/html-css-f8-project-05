@@ -885,7 +885,7 @@ a {
 
 .blog__item-content {
     display: flex;
-    flex: 1;
+    flex: 1; /* để content chiếm toàn bộ không gian còn lại của item, trừ đi khoảng cách giữa ảnh và content */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -918,12 +918,15 @@ a {
 }
 
 .blog__read-more {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto;
     color: #696d76;
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.625; /* 162.5% */
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .blog__read-more:hover {
