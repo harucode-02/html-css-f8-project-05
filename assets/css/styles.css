@@ -738,13 +738,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 96px;
+    margin-top: 94px;
+    gap: 6px;
 }
 
 .clients__avatar-frame {
     width: 104px;
     height: 104px;
-    margin: 0 auto 20px;
+    margin: 0 auto 14px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -752,11 +753,11 @@ a {
     justify-content: center;
 }
 
-.clients__avatar-frame--left {
+.clients__avatar-frame--sky {
     background: #4ab5e3;
 }
 
-.clients__avatar-frame--right {
+.clients__avatar-frame--teal {
     background: #439f90;
 }
 
@@ -770,6 +771,7 @@ a {
 
 .clients__name,
 .clients__position {
+    margin: 0;
     text-align: center;
 }
 
