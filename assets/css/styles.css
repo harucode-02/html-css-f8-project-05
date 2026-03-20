@@ -883,6 +883,15 @@ a {
     display: block; /* để ảnh không bị kéo dãn */
 }
 
+.blog__item-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
 .blog__date {
     color: #696d76;
     font-size: 1.4rem;
@@ -895,9 +904,8 @@ a {
 }
 
 .blog__item-title {
-    width: 332px;
+    max-width: 100%;
     display: inline-block;
-    margin-top: 10px;
     color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
@@ -910,7 +918,6 @@ a {
 }
 
 .blog__read-more {
-    margin-top: 20px;
     display: inline-block;
     color: #696d76;
     font-size: 1.6rem;
