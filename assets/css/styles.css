@@ -897,6 +897,11 @@ a {
     border-radius: 12px;
     object-fit: cover;
     display: block; /* để ảnh không bị kéo dãn */
+    transition: transform 0.25s ease;
+}
+
+.blog__item:hover .blog__item-image {
+    transform: scale(1.03);
 }
 
 .blog__item-content {

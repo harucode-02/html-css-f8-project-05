@@ -386,7 +386,11 @@
             <!-- Clients Section -->
             <section class="clients">
                 <div class="container">
-                    <div class="clients__intro">
+                    <div
+                        class="clients__intro"
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                    >
                         <p class="clients__eyebrow">Trusted By The Best</p>
                         <h2 class="clients__title">Our Clients</h2>
                         <p class="clients__desc">
@@ -395,7 +399,11 @@
                         </p>
                     </div>
                     <div class="clients__list">
-                        <article class="clients__item">
+                        <article
+                            class="clients__item"
+                            data-aos="fade-right"
+                            data-aos-duration="1200"
+                        >
                             <div class="clients__bubble clients__quote-card">
                                 <blockquote class="clients__quote">
                                     Fantastic platform for online banking. The
@@ -420,7 +428,11 @@
                             </div>
                         </article>
 
-                        <article class="clients__item">
+                        <article
+                            class="clients__item"
+                            data-aos="fade-left"
+                            data-aos-duration="1200"
+                        >
                             <div class="clients__bubble clients__quote-card">
                                 <blockquote class="clients__quote">
                                     Fantastic platform for online banking. The
@@ -468,7 +480,11 @@
             <!-- Blog Section -->
             <section class="blog">
                 <div class="container">
-                    <div class="blog__intro">
+                    <div
+                        class="blog__intro"
+                        data-aos="fade-up"
+                        data-aos-duration="1100"
+                    >
                         <div class="blog__intro-content">
                             <p class="blog__eyebrow">Our Blog</p>
                             <h2 class="blog__heading">Get the Latest Updates</h2>
@@ -483,7 +499,11 @@
                         </div>
                     </div>
                     <div class="blog__list">
-                        <article class="blog__item">
+                        <article
+                            class="blog__item"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             <img
                                 src="./assets/img/blog-01.jpg"
                                 alt="Online banking savings article cover"
@@ -504,7 +524,11 @@
                                 >
                             </div>
                         </article>
-                        <article class="blog__item">
+                        <article
+                            class="blog__item"
+                            data-aos="fade-up"
+                            data-aos-duration="1100"
+                        >
                             <img
                                 src="./assets/img/blog-02.jpg"
                                 alt="Online bank account article cover"
@@ -525,7 +549,11 @@
                                 >
                             </div>
                         </article>
-                        <article class="blog__item">
+                        <article
+                            class="blog__item"
+                            data-aos="fade-up"
+                            data-aos-duration="1200"
+                        >
                             <img
                                 src="./assets/img/blog-03.jpg"
                                 alt="Credit card benefits article cover"
@@ -546,7 +574,11 @@
                                 >
                             </div>
                         </article>
-                        <article class="blog__item">
+                        <article
+                            class="blog__item"
+                            data-aos="fade-up"
+                            data-aos-duration="1300"
+                        >
                             <img
                                 src="./assets/img/blog-04.jpg"
                                 alt="Personal finance management article cover"
@@ -731,6 +763,11 @@
                 once: true,
                 duration: 1200,
                 easing: "ease-out-cubic",
+                offset: 80,
+                delay: 0,
+                mirror: false,
+                disable: window.matchMedia("(prefers-reduced-motion: reduce)")
+                    .matches,
             });
         </script>
     </body>
