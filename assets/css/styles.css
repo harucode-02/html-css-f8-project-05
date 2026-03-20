@@ -251,20 +251,20 @@ a {
     position: relative;
 }
 
-.hero__media-img {
+.hero__phone {
     position: absolute;
     left: 100px;
     top: 0;
     width: 296px;
 }
 
-.hero__media-img img {
+.hero__phone img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.hero__media-decor-01 {
+.hero__deposit-badge {
     position: absolute;
     left: 0;
     top: 113px;
@@ -278,7 +278,7 @@ a {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
 }
 
-.hero__media-decor-01 p {
+.hero__deposit-badge p {
     margin-left: 8px;
     color: #31456a;
     font-size: 1.4rem;
@@ -286,7 +286,7 @@ a {
     line-height: 1; /* 100% */
 }
 
-.hero__media-decor-01 span {
+.hero__deposit-badge span {
     margin-left: 19px;
     color: #4ab5e3;
     font-size: 1.4rem;
@@ -294,13 +294,13 @@ a {
     line-height: 1; /* 100% */
 }
 
-.hero__media-decor-02 {
+.hero__interest-stat {
     position: absolute;
     right: 0;
     top: 127px;
 }
 
-.hero__media-decor-03 {
+.hero__secured-badge {
     position: absolute;
     right: 100px;
     bottom: 61px;
