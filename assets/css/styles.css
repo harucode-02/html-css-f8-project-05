@@ -5,8 +5,9 @@
 }
 
 :root {
-    --primary-color: #7264d6;
-    --secondary-color: #212832;
+    --color-brand: #7264d6;
+    --color-heading: #212832;
+    --color-text-muted: #6a6e78;
 }
 
 html {
@@ -26,6 +27,15 @@ button {
 }
 
 /* ==================== Common ==================== */
+a {
+    text-decoration: none;
+}
+
+:where(a, button, input, textarea, select):focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -34,12 +44,18 @@ button {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 28px;
+    border: none;
     border-radius: 6px;
-    background: var(--secondary-color);
+    background: var(--color-heading);
     color: #fff;
     text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
@@ -49,10 +65,11 @@ button {
 }
 /* ==================== Header ==================== */
 .header {
-    padding: 42px 0;
+    padding: 42px 0 16px;
     position: sticky;
-    top: 0;
-    background: #fff;
+    top: -20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
     z-index: 1000;
 }
 
@@ -67,7 +84,7 @@ button {
     margin-left: 70.32px;
 }
 
-.header__item a {
+.header__link {
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -78,12 +95,12 @@ button {
     line-height: 1.75; /* 175% */
 }
 
-.header__item a::after {
+.header__link::after {
     content: "";
     width: 100%;
     height: 1px;
     border-radius: 0.5px;
-    background: var(--primary-color);
+    background: var(--color-brand);
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -94,14 +111,16 @@ button {
         visibility 0.2s ease;
 }
 
-.header__item a:hover {
-    color: #212832;
+.header__link:hover,
+.header__link--active {
+    color: var(--color-heading);
     text-shadow:
-        0 0 0.01px #212832,
-        0 0 0.01px #212832;
+        0 0 0.01px var(--color-heading),
+        0 0 0.01px var(--color-heading);
 }
 
-.header__item a:hover::after {
+.header__link:hover::after,
+.header__link--active::after {
     opacity: 1;
     visibility: visible;
 }
@@ -112,12 +131,9 @@ button {
     align-items: center;
 }
 
-.header__actions a {
-    text-decoration: none;
-}
-
 .header__login {
-    color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--color-heading);
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
@@ -130,10 +146,11 @@ button {
 
 .header__signup {
     margin-left: 28px;
+    text-decoration: none;
 }
 
 .header__signup:hover {
-    background: var(--primary-color);
+    background: var(--color-brand);
     color: #fff;
 }
 
@@ -176,14 +193,14 @@ button {
 
 .hero__title {
     margin-top: 12px;
-    color: #212832;
+    color: var(--color-heading);
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.16; /* 116.667% */
 }
 
 .hero__title span {
-    color: var(--primary-color);
+    color: var(--color-brand);
 }
 
 .hero__desc {
@@ -215,7 +232,7 @@ button {
 }
 
 .hero__newsletter-input:focus {
-    border-color: var(--primary-color);
+    border-color: var(--color-brand);
     outline: none;
     box-shadow: 0 0 0 2.5px rgba(114, 100, 214, 0.3);
 }
@@ -232,7 +249,7 @@ button {
 
 .hero__newsletter:focus-within .hero__newsletter-btn,
 .hero__newsletter-btn:is(:hover, :focus-visible) {
-    background: var(--primary-color);
+    background: var(--color-brand);
     color: #fff;
 }
 
@@ -351,7 +368,7 @@ button {
 }
 
 .features__first-success span {
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-family: Inter, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
@@ -399,7 +416,7 @@ button {
 .features__second-title,
 .features__third-title {
     margin-top: 12px;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25; /* 125% */
@@ -410,7 +427,7 @@ button {
 }
 
 .features__first-subtitle {
-    color: #212832;
+    color: var(--color-heading);
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.45; /* 145.455% */
@@ -448,7 +465,7 @@ button {
 
 .features__second-list li,
 .features__third-list li {
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
@@ -460,7 +477,7 @@ button {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background: #7264d6;
+    background: var(--color-brand);
     border-radius: 999px;
     margin-right: 12px;
     vertical-align: middle;
@@ -477,7 +494,7 @@ button {
 
 .features__second-btn:hover,
 .features__third-btn:hover {
-    background: var(--primary-color);
+    background: var(--color-brand);
     color: #fff;
 }
 
@@ -513,7 +530,7 @@ button {
 
 .features__second-decor-left span {
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
@@ -538,7 +555,7 @@ button {
 
 .features__second-decor-right span {
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-family: Inter, sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -617,7 +634,7 @@ button {
 }
 
 .features__third-payments p {
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
@@ -634,7 +651,7 @@ button {
     width: 90px;
     height: 90px;
     border-radius: 99px;
-    background: #7264d6;
+    background: var(--color-brand);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -674,7 +691,7 @@ button {
 
 .clients__title {
     margin-top: 12px;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25; /* 125% */
@@ -826,8 +843,8 @@ button {
 }
 
 .clients__pagination-dot--active {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--color-brand);
+    border-color: var(--color-brand);
 }
 
 /* ==================== Blog ==================== */
@@ -861,7 +878,7 @@ button {
 .blog__heading {
     display: inline-block;
     margin-top: 6px;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25; /* 125% */
@@ -885,7 +902,7 @@ button {
 }
 
 .blog__btn:hover {
-    background: var(--primary-color);
+    background: var(--color-brand);
     color: #fff;
 }
 
@@ -937,7 +954,7 @@ button {
     width: 332px;
     display: inline-block;
     margin-top: 10px;
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.667; /* 166.667% */
@@ -959,7 +976,7 @@ button {
 }
 
 .blog__read-more:hover {
-    color: #7264d6;
+    color: var(--color-brand);
 }
 
 /* ==================== Apps ==================== */
@@ -973,7 +990,7 @@ button {
     align-items: center;
     text-align: center;
     border-radius: 24px;
-    background: #7264d6;
+    background: var(--color-brand);
     position: relative;
     padding: 100px 0;
 }
@@ -1091,7 +1108,7 @@ button {
 }
 
 .footer__heading {
-    color: var(--secondary-color);
+    color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
@@ -1099,7 +1116,7 @@ button {
 
 .footer__list a,
 .footer__address {
-    color: #6a6e78;
+    color: var(--color-text-muted);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
@@ -1111,7 +1128,7 @@ button {
 }
 
 .footer__list a:hover {
-    color: #7264d6;
+    color: var(--color-brand);
 }
 
 .footer__address {
@@ -1144,7 +1161,7 @@ button {
 }
 
 .footer__newsletter-input:focus {
-    border-color: var(--primary-color);
+    border-color: var(--color-brand);
     outline: none;
     box-shadow: 0 0 0 2.5px rgba(114, 100, 214, 0.3);
 }
@@ -1156,7 +1173,7 @@ button {
 }
 
 .footer__newsletter-btn:hover {
-    background: var(--primary-color);
+    background: var(--color-brand);
     color: #fff;
 }
 
@@ -1175,7 +1192,7 @@ button {
 }
 
 .footer__contact-links a {
-    color: #6a6e78;
+    color: var(--color-text-muted);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.66; /* 166.667% */
@@ -1187,7 +1204,7 @@ button {
 }
 
 .footer__copyright {
-    background: var(--primary-color);
+    background: var(--color-brand);
     padding: 28px 0;
     display: flex;
     justify-content: center;
