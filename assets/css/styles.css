@@ -1033,27 +1033,32 @@ a {
     position: absolute;
     display: block;
     pointer-events: none;
+    animation: apps-orbit 5.2s ease-in-out infinite;
 }
 
 .apps__decor--accent-top-left {
     position: absolute;
     left: 112px;
     top: 49px;
+    animation-delay: 0s;
 }
 
 .apps__decor--accent-middle-left {
     left: 166px;
     top: 263px;
+    animation-delay: 0.8s;
 }
 
 .apps__decor--accent-top-right {
     right: 112px;
     top: 49px;
+    animation-delay: 1.4s;
 }
 
 .apps__decor--accent-middle-right {
     right: 166px;
     top: 263px;
+    animation-delay: 2s;
 }
 
 /* ==================== Footer ==================== */
@@ -1265,6 +1270,25 @@ a {
     }
 }
 
+@keyframes apps-orbit {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-6px) rotate(8deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(6px) rotate(-8deg);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .hero__deposit-badge,
     .hero__interest-stat,
@@ -1272,7 +1296,8 @@ a {
     .features__workflow-brand-badge,
     .features__workflow-activation-card,
     .features__payment-income-badge,
-    .features__transfer-currency-badge {
+    .features__transfer-currency-badge,
+    .apps__decor {
         animation: none;
     }
 }
