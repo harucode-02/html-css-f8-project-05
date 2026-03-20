@@ -1004,11 +1004,16 @@ a {
     transition:
         background 0.2s ease,
         color 0.2s ease,
-        border-color 0.2s ease;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
 }
 
 .apps__store-link:hover {
-    opacity: 0.9;
+    background: #fff;
+    border-color: #fff;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
 }
 
 .apps__store-badge {
@@ -1021,23 +1026,23 @@ a {
     pointer-events: none;
 }
 
-.apps__decor--top-left {
+.apps__decor--accent-top-left {
     position: absolute;
     left: 112px;
     top: 49px;
 }
 
-.apps__decor--middle-left {
+.apps__decor--accent-middle-left {
     left: 166px;
     top: 263px;
 }
 
-.apps__decor--top-right {
+.apps__decor--accent-top-right {
     right: 112px;
     top: 49px;
 }
 
-.apps__decor--middle-right {
+.apps__decor--accent-middle-right {
     right: 166px;
     top: 263px;
 }
