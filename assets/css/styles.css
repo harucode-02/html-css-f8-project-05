@@ -691,30 +691,22 @@ a {
         filter 0.2s ease;
 }
 
-.clients__bubble::before,
 .clients__bubble::after {
     content: "";
     position: absolute;
-    /* để mũi tên luôn nằm chính giữa, bất kể kích thước của bubble thay đổi */
     left: 50%;
-    transform: translateX(-50%);
-    border-style: solid;
+    bottom: -31px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-right: 1px solid #dfe2e8;
+    border-bottom: 1px solid #dfe2e8;
+    transform: translateX(-50%) rotate(45deg);
     pointer-events: none;
-}
-
-.clients__bubble::before {
-    bottom: -61px;
-    border-width: 61px 46px 0 46px;
-    border-color: #dfe2e8 transparent transparent transparent;
-    z-index: 0; /* để border nằm dưới mũi tên trắng */
-    transition: border-color 0.2s ease;
-}
-
-.clients__bubble::after {
-    bottom: -60px;
-    border-width: 60px 45px 0 45px;
-    border-color: #fff transparent transparent transparent;
-    z-index: 1; /* để mũi tên trắng nằm trên border */
+    z-index: 0;
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
 }
 
 .clients__bubble:hover {
@@ -722,8 +714,8 @@ a {
     border-color: #fff;
 }
 
-.clients__bubble:hover::before {
-    border-color: #fff transparent transparent transparent;
+.clients__bubble:hover::after {
+    border-color: #fff;
 }
 
 .clients__quote {
