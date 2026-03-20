@@ -347,6 +347,7 @@ a {
     position: absolute;
     right: 162px;
     top: 76px;
+    animation: features-float-y 3s ease-in-out infinite;
 }
 
 .features__workflow-activation-card {
@@ -361,6 +362,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+    animation: features-sway-x 3.4s ease-in-out infinite;
 }
 
 .features__workflow-activation-content span {
@@ -578,6 +580,7 @@ a {
     border-radius: 16px;
     background: #439f90;
     padding: 15px;
+    animation: features-float-y 3.2s ease-in-out infinite;
 }
 
 .features__payment-income-badge img {
@@ -657,6 +660,7 @@ a {
     position: absolute;
     right: 0;
     bottom: 222px;
+    animation: features-swing 3.6s ease-in-out infinite;
 }
 
 /* ==================== Clients ====================  */
@@ -1224,10 +1228,51 @@ a {
     }
 }
 
+@keyframes features-float-y {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes features-sway-x {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes features-swing {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     .hero__deposit-badge,
     .hero__interest-stat,
-    .hero__secured-badge {
+    .hero__secured-badge,
+    .features__workflow-brand-badge,
+    .features__workflow-activation-card,
+    .features__payment-income-badge,
+    .features__transfer-currency-badge {
         animation: none;
     }
 }
