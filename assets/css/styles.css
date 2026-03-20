@@ -985,13 +985,13 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.apps__actions {
+.apps__store-links {
     margin-top: 38px;
     display: flex;
     gap: 16px;
 }
 
-.apps__button {
+.apps__store-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1007,7 +1007,7 @@ a {
         border-color 0.2s ease;
 }
 
-.apps__button:hover {
+.apps__store-link:hover {
     opacity: 0.9;
 }
 
