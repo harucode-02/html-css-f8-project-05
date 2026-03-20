@@ -339,13 +339,13 @@ a {
     bottom: 1px;
 }
 
-.features__workflow-decor-01 {
+.features__workflow-brand-badge {
     position: absolute;
     right: 162px;
     top: 76px;
 }
 
-.features__workflow-decor-02 {
+.features__workflow-activation-card {
     position: absolute;
     right: 0;
     bottom: 96px;
@@ -359,14 +359,14 @@ a {
     gap: 10px;
 }
 
-.features__workflow-success span {
+.features__workflow-activation-content span {
     color: var(--color-heading);
     font-family: Inter, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
-.features__workflow-success p {
+.features__workflow-activation-content p {
     margin-top: 5px;
     color: #696d76;
     font-family: Inter, sans-serif;
@@ -428,19 +428,19 @@ a {
     margin-top: 70px;
 }
 
-.features__workflow-subtitle {
+.features__workflow-step-title {
     color: var(--color-heading);
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.45; /* 145.455% */
 }
 
-.features__workflow-list > li:nth-child(2) .features__workflow-subtitle,
-.features__workflow-list > li:nth-child(3) .features__workflow-subtitle {
+.features__workflow-list > li:nth-child(2) .features__workflow-step-title,
+.features__workflow-list > li:nth-child(3) .features__workflow-step-title {
     margin-top: 30px;
 }
 
-.features__workflow-desc {
+.features__workflow-step-desc {
     margin-top: 16px;
     color: #696d76;
     font-size: 1.6rem;
