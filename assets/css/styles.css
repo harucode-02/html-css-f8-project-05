@@ -1115,7 +1115,6 @@ a {
 }
 
 .footer__newsletter-input {
-    flex: 1; /* để input chiếm toàn bộ không gian còn lại của newsletter, trừ đi khoảng cách giữa input và button */
     width: 270px;
     height: 54px;
     border-radius: 6px;
@@ -1150,12 +1149,9 @@ a {
     transform: scale(0.98);
 }
 
-.footer__bottom {
+.footer__contact-links {
     margin-top: 54px;
     padding-bottom: 28px;
-}
-
-.footer__contact-links {
     display: flex;
     gap: 100px;
 }
