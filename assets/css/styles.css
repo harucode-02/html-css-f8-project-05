@@ -951,7 +951,8 @@ a {
     border-radius: 24px;
     background: var(--color-brand);
     position: relative;
-    padding: 100px 0;
+    overflow: hidden;
+    padding: 100px 20px;
 }
 
 .apps__eyebrow {
