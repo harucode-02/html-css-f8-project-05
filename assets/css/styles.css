@@ -798,9 +798,12 @@ a {
 .clients__pagination-dot {
     width: 22px;
     height: 6px;
+    padding: 0;
     border-radius: 1px;
     border: 1px solid #9b9fab;
     background: transparent;
+    appearance: none;
+    cursor: pointer;
     transition:
         background 0.2s ease,
         border-color 0.2s ease;
