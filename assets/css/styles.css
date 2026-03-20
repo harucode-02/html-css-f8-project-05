@@ -307,18 +307,14 @@ a {
 }
 
 /* ==================== Features ==================== */
-.features__workflow,
-.features__payment,
-.features__transfer,
+.features,
 .clients,
 .blog,
 .apps {
     margin-top: 160px;
 }
 
-.features__workflow-body,
-.features__payment-body,
-.features__transfer-body {
+.features__body {
     display: flex;
     align-items: center;
     gap: 130px;
@@ -380,16 +376,12 @@ a {
     line-height: 1.71; /* 171.429% */
 }
 
-.features__workflow-content,
-.features__payment-content,
-.features__transfer-content {
+.features__content {
     max-width: 470px;
     width: 100%;
 }
 
-.features__workflow-eyebrow,
-.features__payment-eyebrow,
-.features__transfer-eyebrow,
+.features__eyebrow,
 .clients__eyebrow,
 .blog__eyebrow,
 .hero__eyebrow {
@@ -399,9 +391,7 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.features__workflow-eyebrow::before,
-.features__payment-eyebrow::before,
-.features__transfer-eyebrow::before,
+.features__eyebrow::before,
 .clients__eyebrow::before,
 .blog__eyebrow::before,
 .hero__eyebrow::before {
@@ -414,9 +404,7 @@ a {
     vertical-align: middle;
 }
 
-.features__workflow-title,
-.features__payment-title,
-.features__transfer-title,
+.features__title,
 .clients__title,
 .blog__heading,
 .apps__title {
@@ -426,9 +414,7 @@ a {
     line-height: 1.25; /* 125% */
 }
 
-.features__workflow-title,
-.features__payment-title,
-.features__transfer-title,
+.features__title,
 .clients__title,
 .blog__heading {
     color: var(--color-heading);
