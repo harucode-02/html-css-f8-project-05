@@ -204,7 +204,7 @@ a {
     max-width: 540px;
     height: 74px;
     border-radius: 8px;
-    border: 1px solid rgba(114, 100, 214, 0.2); /* nhạt hơn primary */
+    border: 1px solid rgba(114, 100, 214, 0.2);
     color: #696d76;
     background: #fff;
     font-size: 1.6rem;
@@ -307,49 +307,49 @@ a {
 }
 
 /* ==================== Features ==================== */
-.features__first,
-.features__second,
-.features__third,
+.features__workflow,
+.features__payment,
+.features__transfer,
 .clients,
 .blog,
 .apps {
     margin-top: 160px;
 }
 
-.features__first-body,
-.features__second-body,
-.features__third-body {
+.features__workflow-body,
+.features__payment-body,
+.features__transfer-body {
     display: flex;
     align-items: center;
     gap: 130px;
 }
 
-.features__first-media {
+.features__workflow-media {
     max-width: 570px;
     width: 100%;
     height: 619px;
     position: relative;
 }
 
-.features__first-background {
+.features__workflow-background {
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.features__first-image {
+.features__workflow-image {
     position: absolute;
     left: 7px;
     bottom: 1px;
 }
 
-.features__first-decor-01 {
+.features__workflow-decor-01 {
     position: absolute;
     right: 162px;
     top: 76px;
 }
 
-.features__first-decor-02 {
+.features__workflow-decor-02 {
     position: absolute;
     right: 0;
     bottom: 96px;
@@ -363,14 +363,14 @@ a {
     gap: 10px;
 }
 
-.features__first-success span {
+.features__workflow-success span {
     color: var(--color-heading);
     font-family: Inter, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
-.features__first-success p {
+.features__workflow-success p {
     margin-top: 5px;
     color: #696d76;
     font-family: Inter, sans-serif;
@@ -380,16 +380,16 @@ a {
     line-height: 1.71; /* 171.429% */
 }
 
-.features__first-content,
-.features__second-content,
-.features__third-content {
+.features__workflow-content,
+.features__payment-content,
+.features__transfer-content {
     max-width: 470px;
     width: 100%;
 }
 
-.features__first-eyebrow,
-.features__second-eyebrow,
-.features__third-eyebrow,
+.features__workflow-eyebrow,
+.features__payment-eyebrow,
+.features__transfer-eyebrow,
 .clients__eyebrow,
 .blog__eyebrow,
 .hero__eyebrow {
@@ -399,9 +399,9 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.features__first-eyebrow::before,
-.features__second-eyebrow::before,
-.features__third-eyebrow::before,
+.features__workflow-eyebrow::before,
+.features__payment-eyebrow::before,
+.features__transfer-eyebrow::before,
 .clients__eyebrow::before,
 .blog__eyebrow::before,
 .hero__eyebrow::before {
@@ -414,9 +414,9 @@ a {
     vertical-align: middle;
 }
 
-.features__first-title,
-.features__second-title,
-.features__third-title,
+.features__workflow-title,
+.features__payment-title,
+.features__transfer-title,
 .clients__title,
 .blog__heading,
 .apps__title {
@@ -426,9 +426,9 @@ a {
     line-height: 1.25; /* 125% */
 }
 
-.features__first-title,
-.features__second-title,
-.features__third-title,
+.features__workflow-title,
+.features__payment-title,
+.features__transfer-title,
 .clients__title,
 .blog__heading {
     color: var(--color-heading);
@@ -438,23 +438,23 @@ a {
     color: #fff;
 }
 
-.features__first-list {
+.features__workflow-list {
     margin-top: 70px;
 }
 
-.features__first-subtitle {
+.features__workflow-subtitle {
     color: var(--color-heading);
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.45; /* 145.455% */
 }
 
-.features__first-list > li:nth-child(2) .features__first-subtitle,
-.features__first-list > li:nth-child(3) .features__first-subtitle {
+.features__workflow-list > li:nth-child(2) .features__workflow-subtitle,
+.features__workflow-list > li:nth-child(3) .features__workflow-subtitle {
     margin-top: 30px;
 }
 
-.features__first-desc {
+.features__workflow-desc {
     margin-top: 16px;
     color: #696d76;
     font-size: 1.6rem;
@@ -462,8 +462,8 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.features__second-desc,
-.features__third-desc {
+.features__payment-desc,
+.features__transfer-desc {
     margin-top: 20px;
     color: #696d76;
     font-size: 1.8rem;
@@ -471,24 +471,24 @@ a {
     line-height: 1.66;
 }
 
-.features__second-list,
-.features__third-list {
+.features__payment-list,
+.features__transfer-list {
     margin-top: 28px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     gap: 18px;
 }
 
-.features__second-list li,
-.features__third-list li {
+.features__payment-list li,
+.features__transfer-list li {
     color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
 }
 
-.features__second-list li::before,
-.features__third-list li::before {
+.features__payment-list li::before,
+.features__transfer-list li::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -499,8 +499,8 @@ a {
     vertical-align: middle;
 }
 
-.features__second-btn,
-.features__third-btn {
+.features__payment-btn,
+.features__transfer-btn {
     margin-top: 38px;
     padding: 15px 30px;
     transition:
@@ -508,31 +508,31 @@ a {
         color 0.2s ease;
 }
 
-.features__second-btn:hover,
-.features__third-btn:hover {
+.features__payment-btn:hover,
+.features__transfer-btn:hover {
     background: var(--color-brand);
     color: #fff;
 }
 
-.features__second-btn:active,
-.features__third-btn:active {
+.features__payment-btn:active,
+.features__transfer-btn:active {
     transform: scale(0.98);
 }
 
-.features__second-media {
+.features__payment-media {
     max-width: 570px;
     width: 100%;
     height: 425px;
     position: relative;
 }
 
-.features__second-image {
+.features__payment-image {
     position: absolute;
     left: 0;
     bottom: 55px;
 }
 
-.features__second-decor-01 {
+.features__payment-summary-card {
     position: absolute;
     right: 0;
     top: 0;
@@ -544,7 +544,7 @@ a {
     align-items: center;
 }
 
-.features__second-decor-left span {
+.features__payment-summary-info span {
     display: inline-block;
     color: var(--color-heading);
     font-family: Inter, sans-serif;
@@ -552,11 +552,11 @@ a {
     font-weight: 500;
 }
 
-.features__second-decor-left {
+.features__payment-summary-info {
     white-space: nowrap;
 }
 
-.features__second-decor-left p {
+.features__payment-summary-info p {
     margin-top: 4px;
     color: #696d76;
     font-family: Inter, sans-serif;
@@ -564,12 +564,12 @@ a {
     font-weight: 400;
 }
 
-.features__second-decor-right {
+.features__payment-summary-amount {
     margin-left: 67px;
     white-space: nowrap;
 }
 
-.features__second-decor-right span {
+.features__payment-summary-amount span {
     display: inline-block;
     color: var(--color-heading);
     font-family: Inter, sans-serif;
@@ -577,7 +577,7 @@ a {
     font-weight: 400;
 }
 
-.features__second-decor-right p {
+.features__payment-summary-amount p {
     margin-top: 3px;
     text-align: right;
     color: #696d76;
@@ -586,7 +586,7 @@ a {
     font-weight: 400;
 }
 
-.features__second-decor-02 {
+.features__payment-income-badge {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -597,11 +597,11 @@ a {
     padding: 15px;
 }
 
-.features__second-decor-02 img {
+.features__payment-income-badge img {
     display: block;
 }
 
-.features__second-decor-income span {
+.features__payment-income-content span {
     margin-top: 14px;
     display: inline-block;
     color: #fff;
@@ -610,7 +610,7 @@ a {
     line-height: normal;
 }
 
-.features__second-decor-income p {
+.features__payment-income-content p {
     margin-top: 6px;
     color: #fff;
     font-size: 1.8rem;
@@ -618,26 +618,26 @@ a {
     line-height: normal;
 }
 
-.features__third-media {
+.features__transfer-media {
     max-width: 570px;
     width: 100%;
     height: 600px;
     position: relative;
 }
 
-.features__third-bg {
+.features__transfer-bg {
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.features__third-image {
+.features__transfer-image {
     position: absolute;
     left: 0;
     bottom: 0;
 }
 
-.features__third-payments {
+.features__transfer-payment-panel {
     position: absolute;
     right: 26px;
     bottom: 57px;
@@ -649,21 +649,21 @@ a {
     box-shadow: 0 14px 38px 0 rgba(0, 0, 0, 0.07);
 }
 
-.features__third-payments p {
+.features__transfer-payment-panel p {
     color: var(--color-heading);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66; /* 166.667% */
 }
 
-.features__third-methods {
+.features__transfer-payment-methods {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
 }
 
-.features__third-currency {
+.features__transfer-currency-badge {
     width: 90px;
     height: 90px;
     border-radius: 99px;
