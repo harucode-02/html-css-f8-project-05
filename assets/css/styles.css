@@ -890,6 +890,10 @@ a {
     line-height: 1.714; /* 171.429% */
 }
 
+.blog__item-heading {
+    margin: 0;
+}
+
 .blog__item-title {
     width: 332px;
     display: inline-block;
