@@ -11,6 +11,10 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
@@ -55,7 +59,11 @@
             <section class="hero">
                 <div class="container">
                     <div class="hero__body">
-                        <div class="hero__content">
+                        <div
+                            class="hero__content"
+                            data-aos="fade-right"
+                            data-aos-duration="1200"
+                        >
                             <p class="hero__eyebrow">Digital Smart Wallet</p>
                             <h1 class="hero__title">
                                 Digital <span>Payment</span> For Everyone.
@@ -85,7 +93,11 @@
                             </p>
                         </div>
 
-                        <div class="hero__media">
+                        <div
+                            class="hero__media"
+                            data-aos="fade-left"
+                            data-aos-duration="1400"
+                        >
                             <div class="hero__phone">
                                 <img
                                     src="./assets/img/hero-01.svg"
@@ -691,5 +703,13 @@
                 </div>
             </footer>
         </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+                duration: 1200,
+                easing: "ease-out-cubic",
+            });
+        </script>
     </body>
 </html>

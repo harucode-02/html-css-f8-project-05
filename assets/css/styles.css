@@ -276,6 +276,7 @@ a {
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+    animation: hero-float-y 3.2s ease-in-out infinite;
 }
 
 .hero__deposit-badge p {
@@ -298,12 +299,15 @@ a {
     position: absolute;
     right: 0;
     top: 127px;
+    transform-origin: center;
+    animation: hero-swing 3.6s ease-in-out infinite;
 }
 
 .hero__secured-badge {
     position: absolute;
     right: 100px;
     bottom: 61px;
+    animation: hero-sway-x 3.4s ease-in-out infinite;
 }
 
 /* ==================== Features ==================== */
@@ -1181,4 +1185,49 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
+}
+
+@keyframes hero-float-y {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes hero-sway-x {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-12px);
+    }
+}
+
+@keyframes hero-swing {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(6deg);
+    }
+
+    75% {
+        transform: rotate(-6deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__deposit-badge,
+    .hero__interest-stat,
+    .hero__secured-badge {
+        animation: none;
+    }
 }
