@@ -174,23 +174,6 @@ a {
     width: 100%;
 }
 
-.hero__eyebrow {
-    color: #696d77;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-
-.hero__eyebrow::before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 2px;
-    background: #696d77;
-    margin-right: 12px;
-    vertical-align: middle;
-}
-
 .hero__title {
     margin-top: 12px;
     color: var(--color-heading);
@@ -316,7 +299,10 @@ a {
 /* ==================== Features ==================== */
 .features__first,
 .features__second,
-.features__third {
+.features__third,
+.clients,
+.blog,
+.apps {
     margin-top: 160px;
 }
 
@@ -393,7 +379,10 @@ a {
 
 .features__first-eyebrow,
 .features__second-eyebrow,
-.features__third-eyebrow {
+.features__third-eyebrow,
+.clients__eyebrow,
+.blog__eyebrow,
+.hero__eyebrow {
     color: #696d77;
     font-size: 1.6rem;
     font-weight: 400;
@@ -402,7 +391,10 @@ a {
 
 .features__first-eyebrow::before,
 .features__second-eyebrow::before,
-.features__third-eyebrow::before {
+.features__third-eyebrow::before,
+.clients__eyebrow::before,
+.blog__eyebrow::before,
+.hero__eyebrow::before {
     content: "";
     display: inline-block;
     width: 18px;
@@ -414,12 +406,26 @@ a {
 
 .features__first-title,
 .features__second-title,
-.features__third-title {
+.features__third-title,
+.clients__title,
+.blog__heading,
+.apps__title {
     margin-top: 12px;
-    color: var(--color-heading);
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.25; /* 125% */
+}
+
+.features__first-title,
+.features__second-title,
+.features__third-title,
+.clients__title,
+.blog__heading {
+    color: var(--color-heading);
+}
+
+.apps__title {
+    color: #fff;
 }
 
 .features__first-list {
@@ -661,10 +667,6 @@ a {
 }
 
 /* ==================== Clients ====================  */
-.clients {
-    margin-top: 160px;
-}
-
 .clients__intro {
     display: flex;
     flex-direction: column;
@@ -672,39 +674,9 @@ a {
     text-align: center;
 }
 
-.clients__eyebrow {
-    color: #696d77;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-
-.clients__eyebrow::before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 2px;
-    background: #696d77;
-    margin-right: 12px;
-    vertical-align: middle;
-}
-
-.clients__title {
-    margin-top: 12px;
-    color: var(--color-heading);
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.25; /* 125% */
-}
-
 .clients__desc {
-    margin-top: 18px;
-    max-width: 435px;
     color: #696d76;
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
 }
 
 .clients__list {
@@ -848,9 +820,6 @@ a {
 }
 
 /* ==================== Blog ==================== */
-.blog {
-    margin-top: 160px;
-}
 
 .blog__intro {
     display: flex;
@@ -858,40 +827,13 @@ a {
     align-items: center;
 }
 
-.blog__eyebrow {
-    color: #696d77;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
-}
-
-.blog__eyebrow::before {
-    content: "";
-    display: inline-block;
-    width: 18px;
-    height: 2px;
-    background: #696d77;
-    margin-right: 12px;
-    vertical-align: middle;
-}
-
 .blog__heading {
     display: inline-block;
     margin-top: 6px;
-    color: var(--color-heading);
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.25; /* 125% */
-    text-decoration: none;
 }
 
 .blog__desc {
-    margin-top: 18px;
-    max-width: 435px;
     color: #696d76;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.75; /* 175% */
 }
 
 .blog__btn {
@@ -980,9 +922,6 @@ a {
 }
 
 /* ==================== Apps ==================== */
-.apps {
-    margin-top: 160px;
-}
 
 .apps__body {
     display: flex;
@@ -1012,18 +951,15 @@ a {
     vertical-align: middle;
 }
 
-.apps__title {
-    margin-top: 12px;
+.apps__desc {
     color: #fff;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.25; /* 125% */
 }
 
+.clients__desc,
+.blog__desc,
 .apps__desc {
     margin-top: 18px;
     max-width: 435px;
-    color: #fff;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
