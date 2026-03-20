@@ -1068,3 +1068,134 @@ button {
     right: 166px;
     top: 263px;
 }
+
+/* ==================== Footer ==================== */
+.footer {
+    margin-top: 100px;
+}
+
+.footer__top {
+    display: flex;
+    gap: 163px;
+    padding-top: 100px;
+}
+
+.footer__logo {
+    display: block;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer__heading {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; /* 166.667% */
+}
+
+.footer__list a,
+.footer__address {
+    color: #6a6e78;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    text-decoration: none;
+}
+
+.footer__list li:not(:first-child) {
+    margin-top: 12px;
+}
+
+.footer__list a:hover {
+    color: #7264d6;
+}
+
+.footer__address {
+    max-width: 371px;
+    width: 100%;
+}
+
+.footer__heading--newsletter {
+    margin-top: 24px;
+}
+
+.footer__newsletter {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__newsletter-input {
+    flex: 1; /* để input chiếm toàn bộ không gian còn lại của newsletter, trừ đi khoảng cách giữa input và button */
+    width: 270px;
+    height: 54px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    color: #696d76;
+    background: #fff;
+    font-size: 1.6rem;
+    padding: 0 20px;
+    transition:
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.footer__newsletter-input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2.5px rgba(114, 100, 214, 0.3);
+}
+
+.footer__newsletter-btn {
+    text-align: center;
+    padding: 12px 18px;
+    transition: background 0.2s;
+}
+
+.footer__newsletter-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.footer__newsletter-btn:active {
+    transform: scale(0.98);
+}
+
+.footer__bottom {
+    margin-top: 54px;
+    padding-bottom: 28px;
+}
+
+.footer__contact-links {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__contact-links a {
+    color: #6a6e78;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    text-decoration: none;
+}
+
+.footer__contact-links a:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    background: var(--primary-color);
+    padding: 28px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
