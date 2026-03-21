@@ -252,15 +252,13 @@
                                 >Get Started
                             </a>
                         </div>
-                        <div
-                            class="features__payment-media"
-                            data-aos="fade-left"
-                            data-aos-duration="1200"
-                        >
+                        <div class="features__payment-media">
                             <img
                                 src="./assets/img/feature-03.svg"
                                 alt="Second Feature Image"
                                 class="features__payment-image"
+                                data-aos="flip-left"
+                                data-aos-duration="1300"
                             />
                             <div class="features__payment-summary-card">
                                 <img
@@ -760,12 +758,12 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
-                once: true,
+                once: false,
                 duration: 1200,
                 easing: "ease-out-cubic",
                 offset: 80,
                 delay: 0,
-                mirror: false,
+                mirror: true,
                 disable: window.matchMedia("(prefers-reduced-motion: reduce)")
                     .matches,
             });
