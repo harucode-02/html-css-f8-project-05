@@ -12,11 +12,16 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
+}
+
+section[id] {
+    scroll-margin-top: 140px;
 }
 
 input,
